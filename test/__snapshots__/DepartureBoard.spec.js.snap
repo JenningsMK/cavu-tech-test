@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The outputted HTML We get a total of 4 list elements with the correct out put 1`] = `
+"<div class=\\"departure-board\\">
+  <header class=\\"departure-board__header\\">
+    <h1 class=\\"page-title\\">
+      Departures
+    </h1>
+  </header>
+  <section class=\\"departure-board__headings\\">
+    <div class=\\"grid-alignment\\"><span id=\\"departure\\">Departure time</span> <span id=\\"city-name\\">City Name</span> <span id=\\"code\\">Code</span> <span id=\\"airline\\">Airline</span> <span id=\\"gate\\">Gate</span> <span id=\\"status\\" class=\\"visually-hidden\\">Status</span></div>
+  </section>
+  <ul aria-live=\\"polite\\" class=\\"departure-board__flights\\">
+    <li class=\\"departure-board__flight grid-alignment\\"><time datetime=\\"2022-08-22T10:40:00\\" aria-labelledby=\\"departure\\">
+        10:40
+      </time> <span aria-labelledby=\\"city-name\\" class=\\"flight__city-name\\">
+    Istanbul Airport
+  </span> <span aria-labelledby=\\"code\\" class=\\"flight__code\\">
+    TK1994
+  </span> <span aria-labelledby=\\"airline\\">
+    Turkish Airlines
+  </span> <span aria-labelledby=\\"gate\\" class=\\"flight__gate\\">
+    31
+  </span> <span aria-labelledby=\\"status\\" class=\\"flight flight--closing\\">
+    Final Call
+  </span></li>
+    <li class=\\"departure-board__flight grid-alignment\\"><time datetime=\\"2022-08-22T10:55:00\\" aria-labelledby=\\"departure\\">
+        10:55
+      </time> <span aria-labelledby=\\"city-name\\" class=\\"flight__city-name\\">
+    Lisbon Portela Airport
+  </span> <span aria-labelledby=\\"code\\" class=\\"flight__code\\">
+    TP1317
+  </span> <span aria-labelledby=\\"airline\\">
+    TAP Air Portugal
+  </span> <span aria-labelledby=\\"gate\\" class=\\"flight__gate\\">
+    22
+  </span> <span aria-labelledby=\\"status\\" class=\\"flight flight--closing\\">
+    Final Call
+  </span></li>
+    <li class=\\"departure-board__flight grid-alignment\\"><time datetime=\\"2022-08-22T11:00:00\\" aria-labelledby=\\"departure\\">
+        11:00
+      </time> <span aria-labelledby=\\"city-name\\" class=\\"flight__city-name\\">
+    Orlando International Airport
+  </span> <span aria-labelledby=\\"code\\" class=\\"flight__code\\">
+    EI35
+  </span> <span aria-labelledby=\\"airline\\">
+    Aer Lingus
+  </span> <span aria-labelledby=\\"gate\\" class=\\"flight__gate\\">
+    208
+  </span> <span aria-labelledby=\\"status\\" class=\\"flight flight--closing\\">
+    Final Call
+  </span></li>
+    <li class=\\"departure-board__flight grid-alignment\\"><time datetime=\\"2022-08-22T11:00:00\\" aria-labelledby=\\"departure\\">
+        11:00
+      </time> <span aria-labelledby=\\"city-name\\" class=\\"flight__city-name\\">
+    Cancun International Airport
+  </span> <span aria-labelledby=\\"code\\" class=\\"flight__code\\">
+    TOM192
+  </span> <span aria-labelledby=\\"airline\\">
+    TUI Airways
+  </span> <span aria-labelledby=\\"gate\\" class=\\"flight__gate\\">
+    204
+  </span> <span aria-labelledby=\\"status\\" class=\\"flight flight--to-gate\\">
+    Gate Open
+  </span></li>
+    <li class=\\"departure-board__flight grid-alignment\\"><time datetime=\\"2022-08-22T11:05:00\\" aria-labelledby=\\"departure\\">
+        11:05
+      </time> <span aria-labelledby=\\"city-name\\" class=\\"flight__city-name\\">
+    Brussels Airport
+  </span> <span aria-labelledby=\\"code\\" class=\\"flight__code\\">
+    SN2174
+  </span> <span aria-labelledby=\\"airline\\">
+    Brussels Airlines
+  </span> <span aria-labelledby=\\"gate\\" class=\\"flight__gate\\">
+    A1
+  </span> <span aria-labelledby=\\"status\\" class=\\"flight flight--closing\\">
+    Final Call
+  </span></li>
+  </ul>
+</div>"
+`;
