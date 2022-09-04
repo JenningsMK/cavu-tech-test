@@ -54,7 +54,7 @@ export default {
   .departure-board__flight {
     border-bottom: 2px solid white;
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     grid-gap: 1rem;
     list-style: none;
     margin-bottom: 1rem;
@@ -71,7 +71,7 @@ export default {
     grid-column: -1 / 1;
     margin: 0 auto;
     padding: 0.5rem 0.5rem 0.5rem 0.8rem;
-    width: 130px;
+    width: 8.125rem;
   }
 
   .flight__city-name {
@@ -108,7 +108,7 @@ export default {
     color: var(--flight-gate-departed);
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 50rem) {
     .grid-alignment {
       grid-template-columns: repeat(var(--columns), 1fr);
     }
@@ -116,7 +116,7 @@ export default {
     .departure-board__flight {
       border: 2px solid white;
       border-radius: 10px;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: bold;
       padding: 1rem var(--spacing-table-cell);
     }

@@ -176,7 +176,7 @@ export default {
 <style>
   .edit-status {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 31.25rem;
     padding: 0 0 2rem;
   }
 
@@ -203,7 +203,7 @@ export default {
   .edit-status__label {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 0.5rem;
   }
 

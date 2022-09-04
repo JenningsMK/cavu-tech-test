@@ -48,7 +48,7 @@ export default {
 <style>
   .departure-board {
     background: linear-gradient(90deg, #464646 0%, #000 100%);
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: auto auto 2rem;
     width: 100%;
   }

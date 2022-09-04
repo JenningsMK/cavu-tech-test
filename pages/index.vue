@@ -122,7 +122,7 @@ export default {
   --error: firebrick;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 50rem) {
   :root {
     --columns: 6;
   }

@@ -57,7 +57,7 @@ export default {
 
   .departure-board__headings {
     background: linear-gradient(90deg, #fff 0%, #aebcca 100%);
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: bold;
     margin-bottom: 1rem;
     max-width: var(--cap-screen-size);
@@ -71,13 +71,13 @@ export default {
 
     .departure-board__headings {
       border-radius: 10px;
-      font-size: 18px;
+      font-size: 1.125rem;
       margin: 0 1rem 1rem;
       padding: 0.3rem var(--spacing-table-cell);
     }
   }
 
-  @media screen and (min-width: 1390px) {
+  @media screen and (min-width: 86.875rem) {
     .departure-board__headings {
       margin: 0 auto 1rem;
     }
