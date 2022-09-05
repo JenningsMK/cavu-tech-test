@@ -6,7 +6,7 @@
       <span id="code">Code</span>
       <span id="airline">Airline</span>
       <span id="gate">Gate</span>
-      <span id="status" ref="status-header" class="visually-hidden">Status</span>
+      <span id="status">Status</span>
     </div>
   </section>
 </template>
@@ -14,39 +14,11 @@
 <script>
 
 export default {
-  name: 'TableHeader',
-
-  beforeMount () {
-    const resize = new ResizeObserver((entries) => {
-      const statusHeader = this.$refs['status-header'].classList;
-
-      for (const entry of entries) {
-        if (entry.contentRect) {
-          entry.contentRect.width >= 800
-            ? statusHeader.remove('visually-hidden')
-            : statusHeader.add('visually-hidden');
-        }
-      }
-    });
-
-    resize.observe(document.body);
-  }
+  name: 'TableHeader'
 };
 </script>
 
 <style>
-  .visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-
   .grid-alignment {
     align-items: center;
     display: grid;

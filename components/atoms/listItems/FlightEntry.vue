@@ -1,6 +1,6 @@
 <template>
-  <li class="departure-board__flight grid-alignment">
-    <time :datetime="entrys.scheduledDepartureDateTime" aria-labelledby="departure">
+  <li class="departure-board__flight">
+    <time :datetime="entrys.scheduledDepartureDateTime" aria-labelledby="departure" class="flight__departure">
       {{ entrys.scheduledDepartureDateTimeHuman }}
     </time>
 
@@ -12,7 +12,7 @@
       {{ entrys.flightNumber }}
     </span>
 
-    <span aria-labelledby="airline">
+    <span aria-labelledby="airline" class="flight__airline">
       {{ entrys.airline.name }}
     </span>
 
@@ -22,7 +22,7 @@
 
     <span
       aria-labelledby="status"
-      class="flight"
+      class="flight flight__status"
       :class="{
         'flight--closing': entrys.statusClasses.closing,
         'flight--boarding': entrys.statusClasses.boarding,
@@ -54,12 +54,48 @@ export default {
   .departure-board__flight {
     border-bottom: 2px solid white;
     color: white;
+    display: flex;
+    flex-direction: column;
     font-size: 1rem;
     grid-gap: 1rem;
     list-style: none;
     margin-bottom: 1rem;
     max-width: var(--cap-screen-size);
     padding-bottom: 1.5rem;
+  }
+
+  .flight__departure,
+  .flight__city-name,
+  .flight__code,
+  .flight__airline,
+  .flight__gate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .flight__departure::before {
+    content: "Departure time";
+  }
+
+  .flight__city-name::before {
+    content: "City name";
+    word-break: break-word;
+  }
+
+  .flight__code::before {
+    content: "Code";
+  }
+
+  .flight__airline::before {
+    content: "Airline";
+  }
+
+  .flight__gate::before {
+    content: "Gate";
+  }
+
+  .flight__status::before {
+    content: "State";
   }
 
   .flight {
@@ -72,10 +108,6 @@ export default {
     margin: 0 auto;
     padding: 0.5rem 0.5rem 0.5rem 0.8rem;
     width: 8.125rem;
-  }
-
-  .flight__city-name {
-    word-break: break-word;
   }
 
   .flight__city-name,
